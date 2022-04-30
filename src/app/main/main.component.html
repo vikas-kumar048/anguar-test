@@ -6,29 +6,35 @@
             <div class="row">
               <label>Value 1</label>
               <input type="number" formControlName="input1" required>
-              <div *ngIf="form.get('input2').touched && form.get('input1').hasError('required')" class="errMsg">Value 1 is required</div>
+              <div *ngIf="form.get('input1').hasError('pattern')" class="errMsg">Please enter a valid integer value</div>
+              <div *ngIf="form.get('input1').touched && form.get('input1').hasError('required')" class="errMsg">Value 1 is required</div>
             </div>
             <div class="row">
               <label>Value 2</label>
               <input type="number" formControlName="input2" required>
               <div *ngIf="form.get('input2').touched && form.get('input2').hasError('required')" class="errMsg">Value 2 is required</div>
+              <div *ngIf="form.get('input2').hasError('pattern')" class="errMsg">Please enter a valid integer value</div>
 
             </div>
             <div class="row">
               <label>Value 3</label>
               <input type="number" formControlName="input3">
               <div *ngIf="form.get('input3').touched && form.get('input3').hasError('required')" class="errMsg">Value 3 is required</div>
+              <div *ngIf="form.get('input3').hasError('pattern')" class="errMsg">Please enter a valid integer value</div>
+
 
             </div>
             <div class="row">
               <label>Value 4</label>
               <input type="number" formControlName="input4">
-              <div *ngIf="form.get('input4').touched && form.get('input4').hasError('pattern')" class="errMsg">Value 4 is required</div>
+              <div *ngIf="form.get('input4').touched && form.get('input4').hasError('required')" class="errMsg">Value 4 is required</div>
+              <div *ngIf="form.get('input4').hasError('pattern')" class="errMsg">Please enter a valid integer value</div>
 
             </div>
             <div class="row">
               <label>Value 5</label>
               <input type="number" formControlName="input5">
+              <div *ngIf="form.get('input5').hasError('pattern')" class="errMsg">Please enter a valid integer value</div>
               <div *ngIf="form.get('input5').touched && form.get('input5').hasError('required')" class="errMsg">Value 5 is required</div>
             </div>
             <div style ='margin-top:10px'>
