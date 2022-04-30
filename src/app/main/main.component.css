@@ -1,0 +1,28 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.mainClass{
+    display: block;
+    width: 600px;
+    margin-top: 20px;
+}
+.row{
+    display: inline;
+}
+.mainClass input{
+    max-width: 300px;
+}
+.errMsg{
+    color: red;
+    font-size: 12px;
+}
+button{
+    margin-right: 5px;
+    border-radius: 10px;
+}
